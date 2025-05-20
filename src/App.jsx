@@ -4,20 +4,20 @@ import { motion } from 'framer-motion';
 
 const photos = [
 
-  '/src/photo2.jpg',
-  '/src/photo3.jpg',
-  '/src/photo5.jpg',
-  '/src/photo6.jpg',
-  '/src/photo7.jpg',
-  '/src/photo8.jpg',
-  '/src/photo9.jpg',
-  '/src/photo10.jpg',
-  '/src/photo11.jpg',
-  '/src/unnamed.png',
-  '/src/photo12.jpg',
-  '/src/photo13.jpg',
-  '/src/photo14.jpg',
-  '/src/photo15.jpg'
+  '/photo2.jpg',
+  '/photo3.jpg',
+  '/photo5.jpg',
+  '/photo6.jpg',
+  '/photo7.jpg',
+  '/photo8.jpg',
+  '/photo9.jpg',
+  '/photo10.jpg',
+  '/photo11.jpg',
+  '/unnamed.png',
+  '/photo12.jpg',
+  '/photo13.jpg',
+  '/photo14.jpg',
+  '/photo15.jpg'
 ];
 
 function App() {
