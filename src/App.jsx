@@ -135,39 +135,96 @@ function App() {
 
         {/* ABOUT ME SECTION */}
         <motion.section
-          initial="hidden"
-          animate="visible"
-          variants={slideUp}
-          transition={{ duration: 0.7, delay: 0.18 }}
-          className="mb-5 text-center"
-        >
-          <div className="card border-0 shadow-sm p-4 mx-auto" style={{ maxWidth: 600 }}>
-            <h2 className="mb-3">About Me</h2>
-            <p>
-              Former trades worker turned software developer, now focused on building clean, user-friendly applications with React, JavaScript, and modern web tech. I’m passionate about solving real-world problems and creating impact through code. My hands-on background helps me bring practical, efficient solutions to every project. I also love going on adventures with my wife.
+        initial="hidden"
+        animate="visible"
+        variants={slideUp}
+        transition={{ duration: 0.7, delay: 0.18 }}
+        className="mb-5 text-center"
+    >
+        <div className="card border-0 shadow-sm p-4 mx-auto" style={{ maxWidth: 600 }}>
+        <h2 className="mb-3">About Me</h2>
+        <p>
+            Hey, I’m Joseph. I’m a software developer who swapped tools and job sites for code editors and web apps. When I’m not building or fixing something in React or Python, I’m probably outside—hiking mossy forests in Washington, discovering hidden trails, or just enjoying some time unplugged in the mountains.
+            <br /><br />
+            I love solving real-world problems and making tech more approachable. My favorite projects are the ones that combine practical needs with clean design, and I enjoy learning by getting my hands dirty—whether that’s digging into a new JavaScript library or an overgrown trail.
+            <br /><br />
+            Most of the photos here are from my hikes and adventures around the Pacific Northwest, which is where I call home.
             </p>
-          </div>
+        </div>
+    </motion.section>
+
+    {/* SKILLS SECTION */}
+    <motion.section
+    initial="hidden"
+    animate="visible"
+    variants={slideUp}
+    transition={{ duration: 0.7, delay: 0.28 }}
+    className="mb-5 text-center"
+    >
+    <h2 className="mb-3">Skills</h2>
+    <div className="skills-icons">
+        <span className="icon-badge js" title="JavaScript">
+        {/* JavaScript SVG */}
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#F7DF1E" />
+            <text x="5" y="24" fontFamily="Arial" fontWeight="bold" fontSize="16" fill="#222">JS</text>
+        </svg>
+        </span>
+        <span className="icon-badge react" title="React">
+        {/* React SVG */}
+        <svg width="38" height="38" viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="16" fill="#222" />
+            <ellipse rx="12" ry="4.5" cx="18" cy="18" fill="none" stroke="#61DAFB" strokeWidth="2"/>
+            <ellipse rx="4.5" ry="12" cx="18" cy="18" fill="none" stroke="#61DAFB" strokeWidth="2"/>
+            <ellipse rx="12" ry="4.5" cx="18" cy="18" fill="none" stroke="#61DAFB" strokeWidth="2" transform="rotate(60 18 18)"/>
+            <circle cx="18" cy="18" r="3" fill="#61DAFB"/>
+        </svg>
+        </span>
+        <span className="icon-badge node" title="Node.js">
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#222" />
+            <text x="4" y="20" fontFamily="Arial" fontWeight="bold" fontSize="10" fill="#8CC84B">Node</text>
+        </svg>
+        </span>
+        <span className="icon-badge mysql" title="MySQL">
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#00758F" />
+            <text x="5" y="20" fontFamily="Arial" fontWeight="bold" fontSize="7" fill="#FFF">MySQL</text>
+        </svg>
+        </span>
+        <span className="icon-badge bootstrap" title="Bootstrap">
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#7952B3" />
+            <text x="10" y="24" fontFamily="Arial" fontWeight="bold" fontSize="18" fill="#FFF">B</text>
+        </svg>
+        </span>
+        <span className="icon-badge python" title="Python">
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#306998" />
+            <text x="6" y="22" fontFamily="Arial" fontWeight="bold" fontSize="16" fill="#FFD43B">Py</text>
+        </svg>
+        </span>
+        <span className="icon-badge java" title="Java">
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#f89820" />
+            <text x="6" y="20" fontFamily="Arial" fontWeight="bold" fontSize="10" fill="#222">Java</text>
+        </svg>
+        </span>
+        <span className="icon-badge csharp" title="C#">
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#68217A" />
+            <text x="5" y="24" fontFamily="Arial" fontWeight="bold" fontSize="18" fill="#FFF">C#</text>
+        </svg>
+        </span>
+        <span className="icon-badge cpp" title="C++">
+        <svg width="36" height="36" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="6" fill="#00599C" />
+            <text x="4" y="22" fontFamily="Arial" fontWeight="bold" fontSize="14" fill="#FFF">C++</text>
+        </svg>
+        </span>
+        </div>
         </motion.section>
 
-        {/* SKILLS SECTION */}
-        <motion.section
-          initial="hidden"
-          animate="visible"
-          variants={slideUp}
-          transition={{ duration: 0.7, delay: 0.28 }}
-          className="mb-5 text-center"
-        >
-          <h2 className="mb-3">Skills</h2>
-          <span className="badge bg-primary mx-1">JavaScript</span>
-          <span className="badge bg-secondary mx-1">React</span>
-          <span className="badge bg-success mx-1">Node.js</span>
-          <span className="badge bg-info text-dark mx-1">SQL</span>
-          <span className="badge bg-warning text-dark mx-1">Bootstrap</span>
-          <span className="badge bg-dark mx-1">Python</span>
-          <span className="badge bg-primary mx-1">Java</span>
-          <span className="badge bg-secondary mx-1">C#</span>
-          <span className="badge bg-success mx-1">C++</span>
-        </motion.section>
 
         {/* PROJECTS SECTION */}
         <section>
