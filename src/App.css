@@ -69,3 +69,11 @@
   position: relative;
   z-index: 1;
 }
+
+.resume-viewer {
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.12);
+  border-radius: 1rem;
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}

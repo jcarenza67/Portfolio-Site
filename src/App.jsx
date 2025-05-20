@@ -216,6 +216,15 @@ function App() {
             ))}
           </div>
         </section>
+        
+        <div className="resume-viewer my-5">
+            <h2>Resume</h2>
+            <iframe
+                src="/Joseph_Wilfong_Resume.pdf"
+                style={{ width: "100%", minHeight: "900px", border: "none" }}
+                title="Joseph Wilfong Resume"
+            ></iframe>
+        </div>
 
         {/* CONTACT SECTION */}
         <motion.section
