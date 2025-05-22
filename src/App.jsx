@@ -200,32 +200,32 @@ function App() {
             {[
               {
                 title: "Alpaca Trading Bot",
-                desc: "Automated trading bot using Alpaca API with EMA crossover and RSI strategies. Modular, well-logged, and deployable.",
+                desc: "An automated trading bot that uses Alpaca API with EMA crossover and RSI strategies. Modular, well-logged, and deployable",
                 link: "https://github.com/jcarenza67/alpaca-ema-bot"
               },
               {
                 title: "Hallways (Capstone)",
-                desc: "Psychological horror game in Unity using C#. Loops hallway structure inspired by P.T., with timed suspense events.",
+                desc: "A psychological horror game in Unity using C# that loops the hallway structure inspired by P.T. featuring timed suspense events",
                 link: "https://github.com/jcarenza67/Hallways"
               },
               {
                 title: "The One API",
-                desc: "Twitter bot built with .NET Core and EF to post random Gandalf quotes, using scheduled jobs and external APIs.",
+                desc: "Twitter bot built with .NET Core and EF to post random Gandalf quotes, using scheduled jobs and external APIs",
                 link: "https://github.com/jcarenza67/The_One_API.Solution"
               },
               {
-                title: "Wordpress Customer Site",
-                desc: " 40-page WordPress client site using Elementor.",
+                title: "Wordpress Client Site",
+                desc: "40-page WordPress website I built for a client using Elementor",
                 link: "https://eandvenergy.com/"
               },
               {
                 title: "Coffee House",
-                desc: "This is a mock coffee house inventory website. It allows a user to CRUD coffee house items. Created with React.",
+                desc: "This is a mock coffee house inventory website. It allows a user to CRUD coffee house items. Created with React",
                 link: "https://github.com/jcarenza67/Coffee-House"
               },
               {
                 title: "Pierre's Sweet and Savory Treats",
-                desc: "Pierre's Sweet and Savory Treats is a web application showcasing a many-to-many relationship between treats and flavors with some Identity Authentication.",
+                desc: "Pierre's Sweet and Savory Treats is a web application showcasing a many-to-many relationship between treats and flavors with some Identity Authentication",
                 link: "https://github.com/jcarenza67/Pierres-Sweet-and-Savory-Treats.Solution"
               }
             ].map((proj, i) => (
@@ -256,13 +256,30 @@ function App() {
           </div>
         </section>
         </div>
-        <div className="resume-viewer my-5">
+        <div className="resume-viewer my-5 text-center">
             <h2>Resume</h2>
-            <iframe
-                src="/Joseph_Wilfong_Resume.pdf"
-                style={{ width: "100%", minHeight: "900px", border: "none" }}
-                title="Joseph Wilfong Resume"
-            ></iframe>
+            <img
+                src="/Screenshot resume.png"
+                alt="Preview of Joseph Wilfong Resume"
+                style={{
+                maxWidth: "100%",
+                height: "auto",
+                borderRadius: "12px",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.13)",
+                marginBottom: "1.5rem"
+                }}
+            />
+            <br />
+            <a
+                href="/Joseph_Wilfong_Resume.pdf"
+                className="btn btn-primary btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                style={{ marginTop: "1rem" }}
+            >
+                Download PDF
+            </a>
         </div>
 
         {/* CONTACT SECTION */}
