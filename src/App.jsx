@@ -108,11 +108,9 @@ function App() {
         <div className="card border-0 shadow-sm p-4 mx-auto" style={{ maxWidth: 600 }}>
         <h2 className="mb-3">About Me</h2>
         <p>
-            Hey, I’m Joseph! I’m a software developer who swapped tools and job sites for code editors and web apps. When I’m not building or fixing something in React or Python, I’m probably outside—hiking mossy forests in Washington, discovering hidden trails, or just enjoying some time unplugged in the mountains.
+            Hey, I’m Joseph! I’m a software developer who swapped tools and job sites for code editors and web apps. When I’m not building or fixing something in React or Python, I’m probably outside—hiking mossy forests, discovering hidden trails, exploring the mountains, rock hounding along the coast, or surfing waves. I am also an avid gamer and hope to build my own one day.
             <br /><br />
-            I love solving real-world problems and making tech more approachable. My favorite projects are the ones that combine practical needs with clean design, and I enjoy learning by getting my hands dirty—whether that’s digging into a new JavaScript library or an overgrown trail.
-            <br /><br />
-            Most of the photos here are from my hikes and adventures around the Pacific Northwest, which is where I call home.
+            I love solving real-world problems and making tech more approachable. My favorite projects are the ones that combine practical needs with clean design. I believe in lifelong learning, whether it's hands-on or through a book.
             </p>
         </div>
     </motion.section>
