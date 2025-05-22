@@ -49,8 +49,14 @@
   }
 }
 
-.card, .resume-viewer {
+.card {
   padding: 2em;
+  background: rgba(255, 255, 255, 0.58) !important;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.resume-viewer {
   background: rgba(255, 255, 255, 0.58) !important;
   backdrop-filter: blur(2px);
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
@@ -65,7 +71,7 @@
   height: 320px;
   object-fit: cover;
   object-position: center;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 
 .site-content {
@@ -75,10 +81,10 @@
 
 .resume-viewer {
   box-shadow: 0 2px 24px 0 rgba(0,0,0,0.12);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   background: white;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  height: auto;
 }
 
 .skills-icons {
@@ -95,7 +101,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   background: rgba(255,255,255,0.05);
   box-shadow: 0 4px 16px 0 rgba(30,30,60,0.06);
   transition: transform 0.22s cubic-bezier(.36,1.5,.54,1), box-shadow 0.22s, border 0.18s;
@@ -113,7 +119,6 @@
 .icon-badge svg {
   width: 44px;
   height: 44px;
-  /* Makes the SVG fill the badge */
   display: block;
 }
 

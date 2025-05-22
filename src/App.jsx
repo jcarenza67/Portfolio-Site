@@ -256,31 +256,38 @@ function App() {
           </div>
         </section>
         </div>
-        <div className="resume-viewer my-5 text-center">
-            <h2>Resume</h2>
-            <img
+        <div className="d-flex justify-content-center my-5">
+            <div className="resume-viewer text-center" style={{ maxWidth: 800, width: "100%" }}>
+                <h2>Resume</h2>
+                <img
                 src="/Screenshot resume.png"
                 alt="Preview of Joseph Wilfong Resume"
                 style={{
-                maxWidth: "100%",
-                height: "auto",
-                borderRadius: "12px",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.13)",
-                marginBottom: "1.5rem"
+                    width: "100%",
+                    maxWidth: "800px",
+                    minHeight: "900px",
+                    border: "none",
+                    margin: "0 auto",
+                    display: "block",
+                    background: "#fff",
+                    borderRadius: "1rem",
+                    boxShadow: "0 4px 32px rgba(0,0,0,0.08)",
                 }}
-            />
-            <br />
-            <a
+                />
+                <br />
+                <a
                 href="/Joseph_Wilfong_Resume.pdf"
                 className="btn btn-primary btn-lg"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
                 style={{ marginTop: "1rem" }}
-            >
+                >
                 Download PDF
-            </a>
+                </a>
+            </div>
         </div>
+
 
         {/* CONTACT SECTION */}
         <motion.section
@@ -330,8 +337,25 @@ function App() {
         2.841-1.563 3.039 0 3.6 2 3.6 4.591v5.605z"/>
               </svg>
             </a>
+             <a
+                href="mailto:josephwilfong91@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Email"
+                style={{
+                display: 'flex',
+                alignItems: 'center',
+                textDecoration: 'none',
+                fontWeight: 500,
+                fontSize: '1.1rem'
+                }}
+            >
+                <svg height="28" viewBox="0 0 48 48" width="28">
+                <path fill="#FFF" d="M24 24L44 8v32H4V8z"/>
+                <path fill="#0A66C2" d="M44 8H4l20 16z"/>
+                </svg>
+            </a>
           </div>
-          <p>Email: <a href="mailto:josephwilfong91@gmail.com">josephwilfong91@gmail.com</a></p>
           <p>Location: Shelton, WA (Remote or On-site)</p>
           </div>
         </motion.section>
