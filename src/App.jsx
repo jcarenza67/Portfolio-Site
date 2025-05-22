@@ -256,38 +256,29 @@ function App() {
           </div>
         </section>
         </div>
-        <div className="d-flex justify-content-center my-5">
-            <div className="resume-viewer text-center" style={{ maxWidth: 800, width: "100%" }}>
-                <h2>Resume</h2>
-                <img
+        <div className="resume-viewer my-5 text-center">
+            <h2>Resume</h2>
+            <img
                 src="/Screenshot resume.png"
                 alt="Preview of Joseph Wilfong Resume"
                 style={{
-                    width: "100%",
-                    maxWidth: "800px",
-                    minHeight: "900px",
-                    border: "none",
-                    margin: "0 auto",
-                    display: "block",
-                    background: "#fff",
-                    borderRadius: "1rem",
-                    boxShadow: "0 4px 32px rgba(0,0,0,0.08)",
+                maxWidth: "80%",
+                height: "auto",
+                borderRadius: "12px",
                 }}
-                />
-                <br />
-                <a
+            />
+            <br />
+            <a
                 href="/Joseph_Wilfong_Resume.pdf"
                 className="btn btn-primary btn-lg"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
                 style={{ marginTop: "1rem" }}
-                >
+            >
                 Download PDF
-                </a>
-            </div>
+            </a>
         </div>
-
 
         {/* CONTACT SECTION */}
         <motion.section
@@ -301,6 +292,24 @@ function App() {
           <h2>Contact</h2>
           
           <div className="d-flex justify-content-center gap-3 mb-2">
+            <a
+                href="mailto:josephwilfong91@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Email"
+                style={{
+                display: 'flex',
+                alignItems: 'center',
+                textDecoration: 'none',
+                fontWeight: 500,
+                fontSize: '1.1rem'
+                }}
+            >
+                <svg height="28" viewBox="0 0 48 48" width="28">
+                <path fill="#FFF" d="M24 24L44 8v32H4V8z"/>
+                <path fill="#0A66C2" d="M44 8H4l20 16z"/>
+                </svg>
+            </a>
             {/* GitHub Logo Link */}
             <a
               href="https://github.com/jcarenza67"
@@ -337,24 +346,7 @@ function App() {
         2.841-1.563 3.039 0 3.6 2 3.6 4.591v5.605z"/>
               </svg>
             </a>
-             <a
-                href="mailto:josephwilfong91@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Email"
-                style={{
-                display: 'flex',
-                alignItems: 'center',
-                textDecoration: 'none',
-                fontWeight: 500,
-                fontSize: '1.1rem'
-                }}
-            >
-                <svg height="28" viewBox="0 0 48 48" width="28">
-                <path fill="#FFF" d="M24 24L44 8v32H4V8z"/>
-                <path fill="#0A66C2" d="M44 8H4l20 16z"/>
-                </svg>
-            </a>
+             
           </div>
           <p>Location: Shelton, WA (Remote or On-site)</p>
           </div>
