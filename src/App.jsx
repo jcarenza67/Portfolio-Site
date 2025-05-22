@@ -89,10 +89,12 @@ function App() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-center mb-2"
         >
+          <div className="card border-0 shadow-sm p-4 mx-auto" style={{ maxWidth: 600 }}>
           <h1 className="display-4 fw-bold">Joseph Wilfong</h1>
           <p className="lead mb-1">
             Software Engineer • React Developer • Problem Solver
           </p>
+          </div>
         </motion.header>
 
         {/* ABOUT ME SECTION */}
@@ -123,6 +125,7 @@ function App() {
     transition={{ duration: 0.7, delay: 0.28 }}
     className="mb-5 text-center"
     >
+    <div className="card border-0 shadow-sm p-4 mx-auto" style={{ maxWidth: 600 }}>
     <h2 className="mb-3">Programming Skills</h2>
     <div className="skills-icons">
         <span className="icon-badge js" title="JavaScript">
@@ -185,10 +188,12 @@ function App() {
         </svg>
         </span>
         </div>
+        </div>
         </motion.section>
 
 
         {/* PROJECTS SECTION */}
+        <div className="card border-0 shadow-sm p-4 mx-auto" style={{ maxWidth: 1000 }}>
         <section>
           <h2 className="mb-4 text-center">Projects</h2>
           <div className="row g-4">
@@ -207,6 +212,21 @@ function App() {
                 title: "The One API",
                 desc: "Twitter bot built with .NET Core and EF to post random Gandalf quotes, using scheduled jobs and external APIs.",
                 link: "https://github.com/jcarenza67/The_One_API.Solution"
+              },
+              {
+                title: "Wordpress Customer Site",
+                desc: " 40-page WordPress client site using Elementor.",
+                link: "https://eandvenergy.com/"
+              },
+              {
+                title: "Coffee House",
+                desc: "This is a mock coffee house inventory website. It allows a user to CRUD coffee house items. Created with React.",
+                link: "https://github.com/jcarenza67/Coffee-House"
+              },
+              {
+                title: "Pierre's Sweet and Savory Treats",
+                desc: "Pierre's Sweet and Savory Treats is a web application showcasing a many-to-many relationship between treats and flavors with some Identity Authentication.",
+                link: "https://github.com/jcarenza67/Pierres-Sweet-and-Savory-Treats.Solution"
               }
             ].map((proj, i) => (
               <motion.div
@@ -227,7 +247,7 @@ function App() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      GitHub Repo
+                      Link
                     </a>
                   </div>
                 </div>
@@ -235,7 +255,7 @@ function App() {
             ))}
           </div>
         </section>
-        
+        </div>
         <div className="resume-viewer my-5">
             <h2>Resume</h2>
             <iframe
@@ -253,8 +273,9 @@ function App() {
           transition={{ duration: 0.7, delay: 1.0 }}
           className="my-5 text-center"
         >
+            <div className="card border-0 shadow-sm p-4 mx-auto" style={{ maxWidth: 600 }}>
           <h2>Contact</h2>
-          <p>Email: <a href="mailto:josephwilfong91@gmail.com">josephwilfong91@gmail.com</a></p>
+          
           <div className="d-flex justify-content-center gap-3 mb-2">
             {/* GitHub Logo Link */}
             <a
@@ -293,11 +314,12 @@ function App() {
               </svg>
             </a>
           </div>
+          <p>Email: <a href="mailto:josephwilfong91@gmail.com">josephwilfong91@gmail.com</a></p>
           <p>Location: Shelton, WA (Remote or On-site)</p>
-          
+          </div>
         </motion.section>
 
-        <footer className="text-center text-muted mt-5">
+        <footer className="bottom text-center mt-5">
           &copy; {new Date().getFullYear()} Joseph Wilfong. Built with React + Bootstrap + Framer Motion.
         </footer>
       </div>

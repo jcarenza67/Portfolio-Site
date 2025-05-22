@@ -11,7 +11,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  opacity: .5;
+  opacity: 1;
 }
 
 #root {
@@ -49,8 +49,11 @@
   }
 }
 
-.card {
+.card, .resume-viewer {
   padding: 2em;
+  background: rgba(255, 255, 255, 0.58) !important;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
 
 .read-the-docs {
@@ -126,4 +129,12 @@
     width: 34px;
     height: 34px;
   }
+}
+
+.bottom {
+    color: rgb(198, 219, 192)
+}
+
+.lead {
+    font-weight: 400;
 }
