@@ -255,7 +255,6 @@ function App() {
         >
           <h2>Contact</h2>
           <p>Email: <a href="mailto:josephwilfong91@gmail.com">josephwilfong91@gmail.com</a></p>
-          <p>Location: Shelton, WA (Remote or On-site)</p>
           <div className="d-flex justify-content-center gap-3 mb-2">
             {/* GitHub Logo Link */}
             <a
@@ -294,6 +293,8 @@ function App() {
               </svg>
             </a>
           </div>
+          <p>Location: Shelton, WA (Remote or On-site)</p>
+          
         </motion.section>
 
         <footer className="text-center text-muted mt-5">
