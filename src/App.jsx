@@ -123,7 +123,7 @@ function App() {
     transition={{ duration: 0.7, delay: 0.28 }}
     className="mb-5 text-center"
     >
-    <h2 className="mb-3">Skills</h2>
+    <h2 className="mb-3">Programming Skills</h2>
     <div className="skills-icons">
         <span className="icon-badge js" title="JavaScript">
         {/* JavaScript SVG */}
