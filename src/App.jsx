@@ -199,32 +199,38 @@ function App() {
               {
                 title: "Alpaca Trading Bot",
                 desc: "An automated trading bot that uses Alpaca API with EMA crossover and RSI strategies. Modular, well-logged, and deployable",
-                link: "https://github.com/jcarenza67/alpaca-ema-bot"
+                link: "https://github.com/jcarenza67/alpaca-ema-bot",
+                buttonLabel: "GitHub"
               },
               {
                 title: "Hallways (Capstone)",
                 desc: "A psychological horror game in Unity using C# that loops the hallway structure inspired by P.T. featuring timed suspense events",
-                link: "https://github.com/jcarenza67/Hallways"
+                link: "https://github.com/jcarenza67/Hallways",
+                buttonLabel: "GitHub"
               },
               {
                 title: "The One API",
                 desc: "Twitter bot built with .NET Core and EF to post random Gandalf quotes, using scheduled jobs and external APIs",
-                link: "https://github.com/jcarenza67/The_One_API.Solution"
+                link: "https://github.com/jcarenza67/The_One_API.Solution",
+                buttonLabel: "GitHub"
               },
               {
                 title: "Wordpress Client Site",
                 desc: "40-page WordPress website I built for a client using Elementor",
-                link: "https://eandvenergy.com/"
+                link: "https://eandvenergy.com/",
+                buttonLabel: "Link to Website"
               },
               {
                 title: "Coffee House",
                 desc: "This is a mock coffee house inventory website. It allows a user to CRUD coffee house items. Created with React",
-                link: "https://github.com/jcarenza67/Coffee-House"
+                link: "https://github.com/jcarenza67/Coffee-House",
+                buttonLabel: "GitHub"
               },
               {
                 title: "Pierre's Sweet and Savory Treats",
                 desc: "Pierre's Sweet and Savory Treats is a web application showcasing a many-to-many relationship between treats and flavors with some Identity Authentication",
-                link: "https://github.com/jcarenza67/Pierres-Sweet-and-Savory-Treats.Solution"
+                link: "https://github.com/jcarenza67/Pierres-Sweet-and-Savory-Treats.Solution",
+                buttonLabel: "GitHub"
               }
             ].map((proj, i) => (
               <motion.div
@@ -245,7 +251,7 @@ function App() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Link
+                      {proj.buttonLabel}
                     </a>
                   </div>
                 </div>
